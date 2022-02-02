@@ -7,10 +7,11 @@
     <hr />
     <br>
     <script>
-      $.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
+      function getIP(ip)
+      let ip = $.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
   console.log(JSON.stringify(data, null, 2));
       });</script>
-    <p>Content placeholder</p>
+    <p>(${ip})</p>
     <br>
     <hr />
     <br>
